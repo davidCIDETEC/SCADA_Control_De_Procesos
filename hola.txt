@@ -1,1 +1,9 @@
-somos broncos somos tec NM 
+Los usuarios en la base de datos deben ser usr @ % ('paul'@'%') para permitir la conexion desde el contenedor
+Para las conexiones locales son usr @ 'localhost'
+
+Se debe cambiar el tipo de acceso desde la base de datos:
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf 
+Buscar la linea bind-address y modificar por:
+bind-address = 0.0.0.0
+
+
