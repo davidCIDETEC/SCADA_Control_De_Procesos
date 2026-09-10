@@ -6,4 +6,8 @@ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 Buscar la linea bind-address y modificar por:
 bind-address = 0.0.0.0
 
+COMANDO PARA MONTAR IMAGEN DOCKER
+docker build -t contenedor-v2 .
 
+COMANDO PARA CORRER APLICACION DENTRO DE IMAGEN
+docker run --rm -it -v /home/paul-1/pruebas:/app contenedor-v2 python3 conexion-mysql.py

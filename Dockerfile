@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN python3 -m pip install --no-cache-dir --upgrade pip setuptools wheel
 RUN python3 -m pip install --no-cache-dir \
     pymodbus==2.1.0 \
-    mysql-connector-python==8.0.28
+    mysql-connector-python==8.0.28 \
+    fastapi \
+    uvicorn
 
 WORKDIR /app
