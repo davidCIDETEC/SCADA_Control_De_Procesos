@@ -1,0 +1,1 @@
+docker run --rm -it -v /home/david_rt/SCADA_Control_De_Procesos/archivos_para_pruebas/Medicion_tiempo_MB:/app contenedor-v2 python3 tiempo.py
